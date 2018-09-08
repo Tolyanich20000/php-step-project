@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <h1>{{title}}</h1>
+    <!--<img src="./assets/logo.png">-->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
+
+    data () {
+      return {
+          title: 'Simple TODO List'
+      }
+    }
 }
 </script>
 

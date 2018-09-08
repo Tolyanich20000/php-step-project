@@ -1,26 +1,28 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Authorisation from '../components/Authorization'
-import Registration from '../components/Registration'
+import Vue from 'vue';
+import VueRouter  from 'vue-router';
 
-Vue.use(Router)
+import MainPage from '@/components/MainPage';
+import Authorisation from '@/components/Authorisation';
+import Registration from '@/components/Registration';
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
-    },
-    {
-      path: '/auth',
-      name: 'Authorisation',
-      component: Authorisation
-    },{
-      path: '/reg',
-      name: 'Registration',
-      component: Registration
-    }
-  ]
+Vue.use(VueRouter );
+
+export default new VueRouter ({
+    routes: [
+        {
+            path: '/',
+            name: 'MainPage',
+            component: MainPage
+        },
+        {
+            path: '/auth',
+            name: 'Authorisation',
+            component: Authorisation
+        },
+        {
+            path: '/registration',
+            name: 'Registration',
+            component: Registration
+        }
+    ]
 })

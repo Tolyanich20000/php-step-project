@@ -1,6 +1,6 @@
-# phpleson
+# todolist
 
-> A Vue.js project
+> Todo List
 
 ## Build Setup
 
